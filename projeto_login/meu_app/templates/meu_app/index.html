@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="60">
+  <title>Eco-Spray</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #e3e3e3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 90%;
+      width: 380px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      padding: 8px;
+      font-size: 10px;
+      position: relative;
+}
+
+    .header img {
+      position: absolute;
+      right: 10px; 
+}
+
+    .logo {
+      width: 50px; 
+      height: auto;
+    }
+
+    .titlee {
+      background: #dbead5;
+      color: black;
+      padding: 6px;
+      border-radius: 5px;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      font-weight: bold;
+    }
+
+    .info-box {
+      background: #FEFEE6;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    #ua {
+      color: black;
+      font-size: 14px;
+      text-align: center;
+    }
+
+.info-button {
+  background: #FEFEE6;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px auto; 
+  display: block;
+  width: 100%; 
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+
+.info-button:active {
+  transform: scale(0.95);
+}
+
+.info-button:hover {
+  background: #f7ebc6;
+  cursor: pointer;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>ECO-SPRAY</h1>
+      <img src="Ellipse 1.png" alt="Logo Eco-Spray" class="logo">
+    </div>
+    
+    <div class="titlee"> 
+      <h1>Dados dos sensores DHT11 e LDR</h1>
+      <br>
+    </div>
+    <br>
+
+    <div class="info-box">
+      <i class="fas fa-thermometer-half icon temp-icon"></i>
+      Temperatura: <!-- temperatura --> ºC
+    </div>
+
+    <div class="info-box">
+      <i class="fas fa-tint icon umidade-icon"></i>
+      Umidade: <!-- umidade --> %
+    </div>
+
+    <div class="info-box">
+      <i class="fas fa-sun icon" style="color: #ffc107;"></i>
+      Luminosidade: <!-- recebe_luminosidade -->
+    </div>
+
+    <p id="ua"><strong> Última Atualização: </strong> <!-- dateTime --></p>
+    <button class="info-button" onclick="window.location.href='banco.html'">Buscar dados no banco</button>
+
+
+  </div>
+
+</body>
+</html>
